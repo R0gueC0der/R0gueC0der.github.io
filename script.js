@@ -44,6 +44,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+  new Darkmode().showWidget();
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
