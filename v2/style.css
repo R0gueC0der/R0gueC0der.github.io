@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'Product Sans'
+	src: url('Product Sans Regular.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.spinner-wrapper {
+	height: 100%;
+	width: 100%;
+	background: #333;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1s;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container {
+	opacity: 0;
+	transition: 1s;
+	font-family: 'Product Sans';
+}
+
+.navbar {
+	font-family: 'Product Sans';
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.navbar h3 {
+	font-size: 30px;
+	flex: 5;
+	margin-left: 10%;
+}
+
+.navbar .nav-links {
+	display: flex;
+	margin-right: 10%;
+}
+
+.navbar .nav-links li {
+	padding: 10px 20px;
+	list-style: none;
+}
+
+.navbar .nav-links li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.navbar .menu-toggle {
+	display: none;
+}
+
+.home {
+	height: 50vh;
+	width: 100%;
+}
+
+.home .card-layout {
+	display: flex;
+	height: inherit;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+
+.home .text {
+	margin-left: 10%;
+	flex: 1;
+}
+
+.home .text h3 {
+	font-size: 60px;
+	font-family: 'Product Sans';
+	font-weight: bolder;
+}
+
+.home .text p {
+	font-size: 30px;
+	font-family: 'Product Sans'
+}
+
+.home .graphic {
+	flex: 1;
+	justify-content: center;
+}
+
+.home .graphic img {
+	height: 40%;
+	width: 45%;
+	border-radius: 50%;
+	margin-left: 10%;
+	margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+	.navbar .nav-links li a {
+		display: none;
+	}
+
+	.navbar .nav-links li {
+		display: block;
+	}
+
+	.navbar .menu-toggle {
+		display: block;
+		height: 100px;
+		width: 100px;
+		z-index: 1;
+		align-items: center;
+		margin-top: 60px;
+	}
+
+	.navbar .menu-toggle .bar {
+		height: 5px;
+		width: 30px;
+		background: #333;
+		color: #333;
+		margin-top: 5px;
+		transition: 0.3s;
+	}
+
+	.navbar .menu-toggle .bar.change.bar1 {
+		-moz-transform: rotate(-45deg) translate(-9px, 6px);
+		-ms-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-8.5px, 6.5px);
+	}
+
+	.navbar .menu-toggle .bar.change.bar2 {
+		opacity: 0;
+	}
+
+	.navbar .menu-toggle .bar.change.bar3 {
+		-moz-transform: rotate(45deg) translate(-14px, -8px);
+		-ms-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -6px);
+	}
+
+	.navbar .menu-toggle .bar.change ~ .nav-links {
+		display: block;
+	}
+
+	.home .card-layout {
+		display: block;
+		margin-top: 10%;
+	}
+}
