@@ -240,6 +240,7 @@ html {
 	.home {
 		text-align: center;
 		display: block;
+		margin-left: 10%;
 	}
 
 	.card-layout {
