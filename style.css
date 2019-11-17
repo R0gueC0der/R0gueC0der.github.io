@@ -237,12 +237,6 @@ html {
 		text-align: center;
 	}
 
-	.home {
-		text-align: center;
-		display: block;
-		margin-left: 10%;
-	}
-
 	.card-layout {
 		flex-direction: column;
 	}
@@ -255,7 +249,6 @@ html {
 		margin-top: 100px;
 		display: block;
 		text-align: center;
-		margin-left: -50px;
 	}
 
 	.home .text {
