@@ -10,6 +10,16 @@ html {
 	font-family: 'Montserrat';
 }
 
+.animate {
+	opacity: 0;
+	transition: 1s;
+}
+
+.fade {
+	opacity: 1;
+	transition: 1s;
+}
+
 .navbar {
 	display: flex;
 	height: 70px;
@@ -29,11 +39,12 @@ html {
 }
 
 .home {
-	height: 70%;
+	height: 60%;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 120px;
 }
 
 .home .text {
@@ -43,11 +54,11 @@ html {
 
 .home .text h3 {
 	font-weight: bolder;
-	font-size: 40px;
+	font-size: 60px;
 }
 
 .home .text p {
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .home .graphic {
@@ -98,7 +109,8 @@ html {
 	padding: 20px;
 	text-align: left;
 	border-radius: 3px;
-	height: 330px;
+	height: auto;
+	padding-bottom: 40px;
 }
 
 .about .card-layout .card p {
@@ -116,4 +128,147 @@ html {
 
 .about .card-layout .card > * {
 	margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-width: 75%;
+}
+
+.column {
+  flex: 25%;
+  width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.gallery {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.gallery h3 {
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+
+.tiles {
+	display: flex;
+	justify-content: center;
+}
+
+.gallery .row .tile:hover .tile img {
+	transform: scale(1.2);
+}
+
+.quotes {
+	margin-top: 5%;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.quotes h3 {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.quotes-layout {
+	display: flex;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.quotes-layout .quote {
+	text-align: left;
+	margin-left: 30px;
+	background: #eee;
+	padding: 30px 20px;
+	margin-top: 40px; 
+}
+
+/*
+.quotes .read-more {
+	margin-top: 100px;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 50px;
+}
+
+.quotes .read-more a {
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 1px solid #333;
+}
+*/
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+	.navbar .menu {
+		display: none;
+	}
+
+	.navbar {
+		display: none;
+		margin-left: -8%;
+		text-align: center;
+	}
+
+	.card-layout {
+		flex-direction: column;
+	}
+
+	.card-layout .card {
+		margin-top: 20px;
+	}
+
+	.home {
+		margin-top: 100px;
+		display: block;
+		text-align: center;
+		margin-left: -50px;
+	}
+
+	.home .text {
+		display: block;
+	}
+
+	.home .graphic {
+		margin-top: 20px;
+	}
+
+	.scroll-down {
+		margin-top: 70px;
+	}
+
+	.tiles {
+		margin-left: 25%;
+	}
+
+	.quotes-layout {
+		display: block;
+	}
 }

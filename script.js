@@ -50,3 +50,25 @@ function init() {
   const wait = txtElement.getAttribute('data-wait');
   new TypeWriter(txtElement, words, wait);
 }
+
+const targets = document.querySelectorAll('.animate')
+
+const lazyLoad = target => {
+  const io = new IntersectionObserver((entries, observer) => {
+    console.log(entries)
+
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        const img = entry.target
+        img.classList.add('fade')
+
+        observer.disconnect()
+      }
+    })
+  }, {
+    threshold: 1
+  })
+  io.observe(target)
+}
+
+targets.forEach(lazyLoad)
