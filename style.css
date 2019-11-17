@@ -237,6 +237,11 @@ html {
 		text-align: center;
 	}
 
+	.home {
+		text-align: center;
+		display: block;
+	}
+
 	.card-layout {
 		flex-direction: column;
 	}
