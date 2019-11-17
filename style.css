@@ -38,6 +38,21 @@ html {
 	margin-right: 10%;
 }
 
+.navbar .menu .nav-links {
+	display: flex;
+}
+
+.navbar .menu .nav-links li {
+	padding: 10px 20px;
+	list-style-type: none;
+	font-size: 18px;
+}
+
+.navbar .menu .nav-links li a {
+	text-decoration: none;
+	color: #333;
+}
+
 .home {
 	height: 60%;
 	width: 100%;
@@ -147,6 +162,7 @@ html {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  border-radius: 5px;
 }
 
 .gallery {
@@ -195,6 +211,7 @@ html {
 	background: #eee;
 	padding: 30px 20px;
 	margin-top: 40px; 
+	border-radius: 5px;
 }
 
 /*
@@ -253,10 +270,12 @@ html {
 
 	.home .text {
 		display: block;
+		margin-left: -2.5%;
 	}
 
 	.home .graphic {
 		margin-top: 20px;
+		margin-left: -10%;
 	}
 
 	.scroll-down {

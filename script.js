@@ -72,3 +72,4 @@ const lazyLoad = target => {
 }
 
 targets.forEach(lazyLoad)
+
