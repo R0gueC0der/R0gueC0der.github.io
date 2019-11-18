@@ -43,7 +43,23 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init)
 
 function init() {
-  new Darkmode().showWidget()
+  var options = {
+  bottom: '64px', // default: '32px'
+  right: '64px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
   const txtElement = document.querySelector('.txt-type')
   const words = JSON.parse(txtElement.getAttribute('data-words'))
   const wait = txtElement.getAttribute('data-wait')
