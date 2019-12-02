@@ -581,4 +581,10 @@ progress::-moz-progress-bar {
   	width: 30px;
   	margin-left: 0;
   }
+
+  .list .achievment svg {
+    height: 17px;
+    width: 34px;
+    border-radius: 50px;
+  }
 }
