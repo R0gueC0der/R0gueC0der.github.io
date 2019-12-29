@@ -1,239 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lax.js Demo</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width">
+	<title>Site has Moved</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+		* {
+			font-family: 'Poppins', sans-serif;
+		}
+
+		body {
+			background: #fff;
+		}
+
+		.alert {
+			background: #f8b400;
+			padding: 10px 20px;
+			width: 30%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: #fff;
+			height: 27%;
+			border-radius: 5px;
+			box-shadow: 0 24px 48px -12px #f8b400;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.heading {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+		}
+
+		.heading svg {
+			fill: #fff;
+			height: 50px;
+			width: 50px;
+			margin-left: -20px;
+		}
+
+		.heading h3 {
+			margin-left: 20px;
+		}
+
+		.alert a {
+			color: #f8b400;
+			padding: 10px 20px;
+			background: #fff;
+			margin-top: 20px;
+			text-decoration: none;
+			transition-duration: 0.3s;
+		}
+
+		.alert a:hover {
+			text-decoration: underline;
+		}
+
+		.content {
+			margin-top: -15px;
+		}
+	</style>
+
 </head>
 <body>
 
-	<div id="lawyerModal" class="modal">
-
-	  <!-- Modal content -->
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <h3>Student Of Law</h3>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</p>
-	  </div>
-
+<div class="alert">
+	<div class="heading">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.31 7.526c-.099-.807.528-1.526 1.348-1.526.771 0 1.377.676 1.28 1.451l-.757 6.053c-.035.283-.276.496-.561.496s-.526-.213-.562-.496l-.748-5.978zm1.31 10.724c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
+	<h3>Attention!</h3>
+</div>
+	<div class="content">
+		<p>This site has been moved to the following URL</p>
+		<p><a href="r0guec0der.github.io/gandhi-the-legend">https://r0guec0der.github.io/gandhi-the-legend</a></p>
 	</div>
+</div>
 
-	<div id="politicsModal" class="modal">
-
-	  <!-- Modal content -->
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <h3>Political Activist</h3>
-	    <p>In April 1893, Gandhi aged 23, set sail for South Africa to be the lawyer for Abdullah's cousin. He spent 21 years in South Africa, where he developed his political views, ethics and politics</p>
-	    <p>Immediately upon arriving in South Africa, Gandhi faced discrimination because of his skin colour and heritage, like all people of colour. He was not allowed to sit with European passengers in the stagecoach and told to sit on the floor near the driver, then beaten when he refused; elsewhere he was kicked into a gutter for daring to walk near a house, in another instance thrown off a train at Pietermaritzburg after refusing to leave the first-class. He sat in the train station, shivering all night and pondering if he should return to India or protest for his rights. He chose to protest and was allowed to board the train the next day. In another incident, the magistrate of a Durban court ordered Gandhi to remove his turban, which he refused to do. Indians were not allowed to walk on public footpaths in South Africa. Gandhi was kicked by a police officer out of the footpath onto the street without warning.</p>
-	    <p>When Gandhi arrived in South Africa, according to Herman, he thought of himself as "a Briton first, and an Indian second". However, the prejudice against him and his fellow Indians from British people that Gandhi experienced and observed deeply bothered him. He found it humiliating, struggling to understand how some people can feel honour or superiority or pleasure in such inhumane practices. Gandhi began to question his people's standing in the British Empire.</p>
-	  </div>
-
-	</div>
-
-	<div id="freedomModal" class="modal">
-
-	  <!-- Modal content -->
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <h3>Freedom Fighter</h3>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</p>
-	  </div>
-
-	</div>
-
-		<div class="navbar">
-			<h3>Mahatma Gandhi</h3>
-			<div class="menu">
-				<ul class="nav-links">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">Who He Was</a></li>
-					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#quotes">His Ideals</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="home" id="home">
-			<div class="text">
-				<h3>Mahatma Gandhi</h3>
-				<p class="txt-type" data-wait="3000" data-words='["An Indian Lawyer", "An Anti-Colonial Nationalist", "A Political Ethicist", "The Father of the Nation"]'></p>
-			</div>
-			<div class="graphic">
-				<img src="1.jpg">
-			</div>
-		</div>
-
-		<div class="scroll-down">
-			<a href="#about"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path class="heroicon-ui" d="M11 18.59V3a1 1 0 0 1 2 0v15.59l5.3-5.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1 1.4-1.42l5.3 5.3z"/></svg></a>
-		</div>
-
-
-		<div class="about" id="about">
-			<h3>Who He Was</h3>
-			<div class="card-layout">
-				<div class="card lawyer">
-					<h3>Lawyer</h3>
-					<p>Gandhi came from a poor family, and he had dropped out of the cheapest college he could afford. Mavji Dave Joshiji, a Brahmin priest and family friend, advised Gandhi and his family that he should consider law studies in London. In July 1888, his wife Kasturba gave birth to their first surviving son, Harilal.</p> <p>His mother was not comfortable about Gandhi leaving his wife and family, and going so far from home. Gandhi's uncle Tulsidas also tried to dissuade his nephew. Gandhi wanted to go. To persuade his wife and mother, Gandhi made a vow in front of his mother that he would abstain from meat, alcohol and women. Gandhi's brother Laxmidas, who was already a lawyer, cheered Gandhi's London studies plan and offered to support him. Putlibai gave Gandhi her permission and blessing.</p>
-					<button href="#" id="lawyerReadMore">Read More</a>
-				</div>
-				<div class="card political">
-					<h3>Political Leader</h3>
-					<p>In April 1893, Gandhi aged 23, set sail for South Africa to be the lawyer for Abdullah's cousin. He spent 21 years in South Africa, where he developed his political views, ethics and politics.</p>
-					<p>When Gandhi arrived in South Africa, according to Herman, he thought of himself as "a Briton first, and an Indian second". However, the prejudice against him and his fellow Indians from British people that Gandhi experienced and observed deeply bothered him. He found it humiliating, struggling to understand how some people can feel honour or superiority or pleasure in such inhumane practices.</p>
-					<button id="politicsReadMore">Read More</a>
-				</div>
-				<div class="card freedom">
-					<h3>Freedom Fighter</h3>
-					<p>Gandhi joined the Indian National Congress and was introduced to Indian issues, politics and the Indian people primarily by Gokhale. Gokhale was a key leader of the Congress Party best known for his restraint and moderation, and his insistence on working inside the system. Gandhi took Gokhale's liberal approach based on British Whiggish traditions and transformed it to make it look Indian.</p>
-					<p>Gandhi took leadership of the Congress in 1920 and began escalating demands until on 26 January 1930 the Indian National Congress declared the independence of India. The British did not recognise the declaration but negotiations ensued, with the Congress taking a role in provincial government in the late 1930s.</p>
-					<button id="freedomReadMore">Read More</a>
-				</div>
-			</div>
-		</div>
-
-		<!-- GALLERY -->
-		<div class="gallery" id="gallery">
-			<h3>Gallery</h3>
-				<div class="tiles">
-					<div class="row">
-					  <div class="column">
-					  	<div class="tile">
-					  		<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg" class="animate">
-					  		<div class="overlay">
-							    <div class="text"></div>
-							</div>
-					  	</div>
-					  	<div class="tile">
-					  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Gandhi_Jinnah_1944.jpg/220px-Gandhi_Jinnah_1944.jpg" class="animate">
-					  	<div class="overlay">
-							    <div class="text"></div>
-							</div>
-					  </div>
-					  </div>
-					  <div class="column">
-					  	
-						<div class="tile">
-					  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tagore_Gandhi.jpg/220px-Tagore_Gandhi.jpg" class="animate">
-					  	<div class="overlay">
-							    <div class="text"></div>
-							</div>
-					  </div>
-					  <div class="tile">
-					  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Gandhi_writing_1942.jpg/220px-Gandhi_writing_1942.jpg" class="animate">
-					  	<div class="overlay">
-							    <div class="text"></div>
-							</div>
-						</div>
-					  </div>
-					  <div class="column">
-					  	<div class="tile">
-					  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gandhi_spinning.jpg/220px-Gandhi_spinning.jpg" class="animate">
-					  	<div class="overlay">
-							    <div class="text"></div>
-							</div>
-					  </div>
-					  	<div class="tile">
-					  	<img src="https://m.telegraphindia.com/unsafe/620x350/smart/static.telegraphindia.com/derivative/THE_TELEGRAPH/1671172/16X9/image34ba57f1-21d2-4af6-ad21-b9c036e39194.jpg" class="animate">
-					  	<div class="overlay">
-							    <div class="text"></div>
-							</div>
-					  </div>
-					  <div class="tile">
-					  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Mountbattens_with_Gandhi_%28IND_5298%29.jpg/220px-Mountbattens_with_Gandhi_%28IND_5298%29.jpg" class="animate">
-					  	<div class="overlay">
-							    <div class="text"></div>
-							</div>
-					  </div>
-					  </div>
-					</div>
-				</div>
-		</div>
-
-		<div class="quotes" id="quotes">
-			<h3>His Ideals</h3>
-			<div class="quotes-layout">
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>Be the change you wish to see in the world.</p>
-					</div>
-				</div>
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>Happiness is when what you think, what you say, and what you do are in harmony.</p>
-					</div>
-				</div>
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>The weak can never forgive. Forgiveness is the attribute of the strong.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="quotes-layout">
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>Where there is love there is life.</p>
-					</div>
-				</div>
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>Strength does not come from physical capacity. It comes from an indomitable will.</p>
-					</div>
-				</div>
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>In a gentle way, you can shake the world.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="quotes-layout">
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>Where there is love there is life.</p>
-					</div>
-				</div>
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>Earth provides enough to satisfy every man's needs, but not every man's greed.</p>
-					</div>
-				</div>
-				<div class="quote">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-					<div class="content">
-						<p>I will not let anyone walk through my mind with their dirty feet.</p>
-					</div>
-				</div>
-			</div>
-
-			<!--<div class="read-more">
-				<a href="#">Read More</a>
-			</div> -->
-		</div>
-
-		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min.js"></script>
-		<script src="https://unpkg.com/popper.js"></script>
-		<script src="https://unpkg.com/tooltip.js"></script>
-		<script src="script.js"></script>
-</script>
 </body>
 </html>
